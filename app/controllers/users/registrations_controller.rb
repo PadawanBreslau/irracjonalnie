@@ -2,6 +2,6 @@
 
 module Users
   class RegistrationsController < ::Devise::RegistrationsController
-    invisible_captcha only: %i[create], honeypot: :name
+    invisible_captcha only: [:create], honeypot: :name
   end
 end

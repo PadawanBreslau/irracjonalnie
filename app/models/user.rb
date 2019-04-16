@@ -10,6 +10,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
   private
 
   # Makes the display_name unique by appending a number to it if necessary.
